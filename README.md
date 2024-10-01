@@ -1,47 +1,51 @@
 # YouTube Video Downloader
 
-A Python tool that allows users to download videos from YouTube in various resolutions using `yt-dlp`.
+A simple Python tool that allows users to download videos from YouTube in the highest quality using `yt-dlp`. This downloader merges the best video and audio streams into a single MP4 file.
 
 ## Features
-- Download videos in multiple resolutions (144p, 360p, 720p, 1080p).
-- User-friendly interface for selecting video quality.
-- Merges audio and video streams automatically.
+- Download videos in the highest available quality.
+- Automatically merges audio and video streams.
+- User-friendly interface for selecting the download location.
 
 ## Requirements
-- Python 3.x
-- yt-dlp: Install with `pip install yt-dlp`
-- Tkinter (comes pre-installed with Python)
+Before running the script, ensure that you have the following installed:
 
-## Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Rayyan-Grey/YouTube-Video-Downloader.git
+- **Python 3.x**
+- **yt-dlp**: Install using:
+  ```bash
+  pip install yt-dlp
+Tkinter: Should come pre-installed with Python. If not, follow the platform-specific installation:
 
-2. Run the Script:
-   Navigate to the project directory and run the Python script: python Youtube-Video-Downloader.py
-3. Follow the Instructions:
+Linux: sudo apt-get install python3-tk
 
-   - Enter the YouTube URL when prompted.
-   - Choose the folder where you want the video to be saved.
-   - Select the video quality from the available options.
-4. Video is Downloaded: The selected video will be downloaded in the chosen resolution to the specified folder.
+MacOS: Already included in Python installations.
+
+Windows: Installed with Python by default.
+
+FFmpeg: Make sure FFmpeg is installed and added to your system PATH for merging audio and video streams. You can download it from FFmpeg's official website.
+
+# How to Use
+- Clone the Repository: Clone this repository to your local machine using:
+```bash
+git clone https://github.com/Rayyan-Grey/YouTube-Video-Downloader.git
+```
+- Run the Script: Navigate to the project directory and run the Python script:
+```bash
+python Youtube-Video-Downloader.py
+```
+- Follow the Prompts:
+
+  - Enter the YouTube video URL when prompted.
+  - Choose the folder where you want the video to be saved.
+    
+- Download Completion: The selected video will be downloaded, and the audio will be merged into a single MP4 file.
 
 # Example
-
+```bash
 Please enter a YouTube URL: https://www.youtube.com/watch?v=example
-
-Fetching available quality options...
-1. 1080p | MP4 | 50.23 MB
-2. 720p | MP4 | 30.45 MB
-3. 480p | MP4 | 20.67 MB
-4. 360p | MP4 | 10.12 MB
-
-Enter the number corresponding to the quality you want to download: 1.
-
-Selected format: 1080p.
-
-Video downloaded successfully!.
-
+Selected folder: C:\Users\Downloads
+Started download...
+Video downloaded successfully in the highest quality!
+```
 # Contributing
-
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
