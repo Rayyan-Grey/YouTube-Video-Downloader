@@ -15,8 +15,8 @@ A Python tool that allows users to download videos from YouTube in various resol
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Rayyan-Grey/YouTube-Video-Downloader.git
-   cd YouTube-Video-Downloader
+   git clone https://github.com/your-username/YouTube-Video-Downloader.git
+
 2. Run the Script:
    Navigate to the project directory and run the Python script: python Youtube-Video-Downloader.py
 3. Follow the Instructions:
